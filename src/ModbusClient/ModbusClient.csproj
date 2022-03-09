@@ -4,10 +4,24 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>1.0.1</Version>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <Description>Simple implementation of a client for reading and writing data to a Modbus device. </Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/HVC-HKE/Modbus</RepositoryUrl>
+    <PackageTags>modbus;bluelog</PackageTags>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="ModbusRs232\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
